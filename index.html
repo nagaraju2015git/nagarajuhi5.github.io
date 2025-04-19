@@ -4,230 +4,139 @@
 		<title>Gambhir Tech Tips</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
 	</head>
 	<body class="is-preload">
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">Top</a></li>
-					<li><a href="#work">Work</a></li>
-					<li><a href="#blogs">Blogs</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#resume">Resume</a></li>	
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-
+<!-- Nav -->
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark shadow">
+	<div class="container-fluid px-4">
+	  <a class="navbar-brand d-flex align-items-center gap-3" href="#top">
+		<img src="images/owner.jpeg" 
+			 class="rounded-circle" 
+			 alt="Profile picture of Gambhir Nagaraju"
+			 style="width: 50px; height: 50px; object-fit: cover;">
+		<span class="fw-semibold fs-5">Gambhir Nagaraju</span>
+	  </a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+			  data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+			  aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+		<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+		  <li class="nav-item"><a class="nav-link active" aria-current="page" href="#top">Home</a></li>
+		  <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+		  <li class="nav-item"><a class="nav-link" href="#blogs">Blogs</a></li>
+		  <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+		  <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+		  <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+		</ul>
+	  </div>
+	</div>
+  </nav>
+  
 		<!-- Home -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/pic00.jpg" alt="" /></span>
+			<div class="container my-4 ">
+				<div class="row justify-content-center">
+					<div class="col-lg mb-lg-4">
+						<div class="my-3">
+							<!--img src="images/pic00.jpg" class="img-fluid" alt="" srcset=""-->
+							<!--img src="images/pic00.jpg" 
+     class="img-fluid rounded-circle" 
+     alt="Profile picture of Gambhir Nagaraju"
+     style="width: 100px; height: 100px; object-fit: cover;"-->
 						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1>Hi</strong>.</h1>
-							</header>
-							<p>I'm Gambhir, a passionate software engineer on a mission to elevate the art of software development through the power of automation. 🚀 With a keen focus on enhancing overall efficiency in the software development lifecycle, I delve into the realms of cutting-edge technologies and automation tools to streamline processes, eliminate bottlenecks, and deliver high-quality software solutions.</p>
-							<p>🛠️ As a seasoned practitioner in the world of code, I constantly seek innovative ways to boost productivity, foster collaboration, and build robust software systems. My journey revolves around harnessing the potential of automation to empower developers, simplify complex workflows, and accelerate the pace of software delivery.</p>
-							<p>🌐 On this GitHub Pages, you'll find a collection of projects, repositories, and insights that reflect my dedication to advancing software engineering practices. Whether it's crafting automation scripts, exploring DevOps methodologies, or diving into the latest tools, every line of code here is a step towards a more efficient and effective software development ecosystem.</p>
-							<p>🚧 Join me in this coding adventure, where we bridge the gap between human ingenuity and machine precision. Let's code the future together!</p>
-							<a href="#work" class="button large scrolly">Learn about what I do</a>
+					</div>
+					<div class="col-lg mx-2 align-self-center">
+						<div class="my-3">
+							<h1 class="text-center">I'm Gambhir Nagaraju</h1>
+							<p>My experience spans a variety of projects, from standalone desktop applications to SaaS models delivering business solutions from the cloud. Currently, I work on a distributed system deployed on GCP infrastructure,
+								though I also have experience deploying microservices to AWS. I contribute across the full stack, including React and Node.js-based applications, as well as Go and Python-based services. While I enjoy working across 
+								technologies, I have a particular passion for Flask and Django. <br><br>
+								
+								One of my most recent passion projects is a Flask-based micro-blogging <a href="https://www.wizvibes.ai" target="_blank" rel="noopener noreferrer">Platform</a>
+								, which is deployed on Heroku.
+								<br><br>
+								In addition to development, I actively participate in technical stack discussions, help shape product roadmaps, and enjoy mentoring fellow software engineers.
+							</p>
 						</div>
 					</div>
 				</div>
-			</article>
+			</div>
 
-		<!-- Work -->
-			<article id="work" class="wrapper style2">
-				<div class="container">
-					<header>
-						<h2>Here's all the stuff I do.</h2>
-					</header>
-					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon featured fa-comments"></span>
-								<h3>Automation Scripting</h3>
-								<p>Efficiently automate repetitive tasks using powerful scripts, enhancing development workflows and saving valuable time.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon solid featured fa-camera-retro"></span>
-								<h3>Devops Integration</h3>
-								<p>Implementing seamless DevOps practices to optimize collaboration between development and operations teams, fostering CI.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<span class="icon featured fa-thumbs-up"></span>
-								<h3>CI/CD Pipelines</h3>
-								<p>Designing and implementing robust CI/CD pipelines to automate testing, deployment, and delivery processes for reliable releases</p>
-							</section>
-						</div>
-					</div>
-					<footer>
-						<!--p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p-->
-						<a href="#blogs" class="button large scrolly">See some of my recent work</a>
-					</footer>
-				</div>
-			</article>
+<!-- Inside the container created above -->
+<div class="my-4" id="work">
+    <div class="text-center mb-4">
+        <h1>My Skills</h1>
+    </div>
+    <div class="row ">
+		<!-- External CSS file linked -->
+		<link rel="stylesheet" href="styles.css">
+        <!-- Skills -->
+        <div class="col">
+            <div class="text-center">
+                <h4>Frontend</h4>
+                <i class="devicon-react-plain"></i>
+            </div>
+            <div class="text-center">
+                <h4>Backend</h4>
+                <i class="devicon-flask-plain"></i>
+            </div>
+		</div>
+		<div class="col">
+			<div class="text-center">
+				<h4>Infrastructure</h4>
+				<i class="devicon-docker-plain"></i>
+			</div>
+			<div class="text-center">
+				<h4>Tools</h4>
+				<i class="devicon-gradle-plain"></i>
+			</div>
+		</div>
+		<div class="col">
+            <div class="text-center">
+                <h4>Cloud</h4>
+                <i class="devicon-googlecloud-plain" ></i>
+            </div>
+			<div class="text-center">
+                <h4>AI</h4>
+                <i class="devicon-graphql-plain" ></i>
+            </div>
 
-		<!-- Portfolio -->
-			<article id="blogs" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Here’s some Blogs I made recently.</h2>
-						<!--p>Proin odio consequat sapien vestibulum consequat lorem dolore feugiat.</p-->
-					</header>
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://swtestpattern.blogspot.com/2024/01/shift-left-comprehensive-guide-to-shift.html" class="image featured"><img src="images/pic01.jpg" alt="" height="225"/></a>
-								<h3><a href="https://swtestpattern.blogspot.com/2024/01/shift-left-comprehensive-guide-to-shift.html">Shift Left Strategy</a></h3>
-								<p>A comprehensive Guide.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://swtestpattern.blogspot.com/2024/01/graphql-python.html" class="image featured"><img src="images/pic02.jpeg" alt="" height="225"/></a>
-								<h3><a href="https://swtestpattern.blogspot.com/2024/01/graphql-python.html">GraphQL Guide</a></h3>
-								<p>A brief introduction to GraphQL</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://swtestpattern.blogspot.com/2024/01/testing-graphql-apis-with-python.html" class="image featured"><img src="images/pic03.png" alt="" height="225"/></a>
-								<h3><a href="https://swtestpattern.blogspot.com/2024/01/testing-graphql-apis-with-python.html">GraphQL - Python Test</a></h3>
-								<p>A brief introduction to pytest with graphql</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://swtestpattern.blogspot.com/2024/01/unveiling-differences-pytest-vs.html" class="image featured"><img src="images/pic04.png" alt="" height="225"/></a>
-								<h3><a href="https://swtestpattern.blogspot.com/2024/01/unveiling-differences-pytest-vs.html">PyTest Vs UnitTest</a></h3>
-								<p>Unveiling the Differences: PyTest vs. unittest in Python</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://swtestpattern.blogspot.com/2024/01/navigating-testing-landscape-cypress-vs.html" class="image featured"><img src="images/pic05.jpeg" alt="" height="225"/></a>
-								<h3><a href="https://swtestpattern.blogspot.com/2024/01/navigating-testing-landscape-cypress-vs.html">Cypress Vs WDIO</a></h3>
-								<p>Navigating the Testing Landscape: Cypress vs. Webdriver.io</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://swtestpattern.blogspot.com/2024/01/unleashing-comprehensive-performance.html" class="image featured"><img src="images/pic06.png" alt="" height="225"/></a>
-								<h3><a href="https://swtestpattern.blogspot.com/2024/01/unleashing-comprehensive-performance.html">Measure Performance - JMeter</a></h3>
-								<p>Comprehensive Performance Testing</p>
-							</article>
-						</div>
-					</div>
-					<footer>
-						<!--p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p-->
-						<a href="#contact" class="button large scrolly">Get in touch with me</a>
-					</footer>
-				</div>
-			</article>
+        </div>
 
-		<!-- Resume -->
-			<article id="resume" class="wrapper style3">
-				<!-- Link to your separate HTML file for work experiences -->
-				<iframe src="work_experiences.html" width="100%" height="800px" frameborder="0"></iframe>
-			</article>
 
-		<!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					<header>
-						<h2>Have me make stuff for you.</h2>
-						<!--p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p-->
-					</header>
-					<div class="row">
-						<div class="col-12">
-							<form method="post" onsubmit="sendEmail()">
-								<div class="row">
-									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Clear Form" class="alt" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</div>
+    </div>
+</div>
+
 						<div class="col-12">
 							<hr />
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
+							<h3 class="text-center">Find me on ...</h3>
+							<ul class="social list-unstyled d-flex justify-content-center gap-4 my-3">
+								<li>
+									<a href="https://www.linkedin.com/in/gambhir-nagaraju-b4091b22/" class="icon brands fa-linkedin-in text-dark fs-4 devicon-linkedin-plain" target="_blank" rel="noopener noreferrer">
+										<span class="label">LinkedIn</span>
+									</a>
+								</li>
+								<li>
+									<a href="https://github.com/nagaraju2015git" class="icon brands fa-github text-dark fs-4 devicon-github-plain" target="_blank" rel="noopener noreferrer">
+										<span class="label">Github</span>
+									</a>
+								</li>
 							</ul>
 							<hr />
 						</div>
-					</div>
 					<footer>
 						<ul id="copyright">
-							<li>&copy; All rights reserved - Gambhir.</li>
+							<li>&copy; <span id="currentYear"></span> All rights reserved - Gambhir.</li>
 						</ul>
 					</footer>
+					<script>
+					</script>
 				</div>
 			</article>
-
-		<!-- Scripts -->
-		<script>
-			function sendEmail() {
-				console.log("hello");
-				var name = document.getElementById('name').value;
-				var email = document.getElementById('email').value;
-				var subject = document.getElementById('subject').value;
-				var message = document.getElementById('message').value;
-	
-				var mailtoLink = 'mailto:nagarajuhi5@gmail.com?subject=' + encodeURIComponent(subject) +
-					'&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);
-	
-				window.location.href = mailtoLink;
-			}
-		</script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
